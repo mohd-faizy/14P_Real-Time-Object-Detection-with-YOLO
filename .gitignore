@@ -1,0 +1,58 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+*.pyo
+.pytest_cache/
+
+# Virtual Environments
+venv/
+.venv/
+env/
+.env/
+
+# Build & Compilation Artifacts
+obj/
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+darknet
+*.dSYM/
+*.out
+
+# Logs & Downloads
+wget-log*
+*.log
+
+# Output media & generated results (keep results directory via .gitkeep)
+results/*
+!results/.gitkeep
+output.mp4
+output.jpg
+video.mp4
+pictures_*.jpg
+
+# OS Generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+*.swp
+*.swo
+
+# IDE & Editor artifacts
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
