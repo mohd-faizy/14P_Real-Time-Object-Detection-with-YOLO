@@ -219,8 +219,29 @@ def process_image(detector: YOLODetector, args: argparse.Namespace) -> None:
     """Handles static image detection and saves the annotated result."""
     img_path = Path(args.image_path)
     if not img_path.exists():
-        print(f"[ERROR] Image file not found: {img_path}")
-        sys.exit(1)
+        # Check if file exists with another common image extension
+        found_alt = None
+        for ext in [".png", ".jpg", ".jpeg", ".webp", ".bmp"]:
+            candidate = img_path.with_suffix(ext)
+            if candidate.exists():
+                found_alt = candidate
+                break
+
+        if found_alt:
+            print(f"[INFO] '{img_path}' not found, but found '{found_alt}'. Using '{found_alt}' instead.")
+            img_path = found_alt
+        else:
+            print(f"[ERROR] Image file not found: {img_path}")
+            images_dir = Path("data/images")
+            if images_dir.exists():
+                available = [
+                    f.name
+                    for f in images_dir.iterdir()
+                    if f.suffix.lower() in [".jpg", ".png", ".jpeg", ".webp", ".bmp"]
+                ]
+                if available:
+                    print(f"[INFO] Available images in data/images/: {', '.join(available)}")
+            sys.exit(1)
 
     image = cv.imread(str(img_path))
     if image is None:

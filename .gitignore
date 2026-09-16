@@ -32,6 +32,8 @@ wget-log*
 # Output media & generated results (keep results directory via .gitkeep)
 results/*
 !results/.gitkeep
+!results/*_detected.jpg
+!results/*.gif
 output.mp4
 output.jpg
 video.mp4
