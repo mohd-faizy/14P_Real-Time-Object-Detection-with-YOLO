@@ -92,7 +92,7 @@ The detection workflow follows a modular, decoupled architecture:
 
 <div align="center">
   <img src="results/market_yolo26.gif" alt="Real-Time Video Object Detection with YOLO26" width="90%" />
-  <p><em>Real-time inference on <code>market.mp4</code> running at ~41+ FPS with live rolling HUD telemetry, FPS smoothing, and dynamic bounding box overlays.</em></p>
+  <p><em>Real-time inference on <code>market.mp4</code> with live rolling HUD telemetry, FPS smoothing, and dynamic bounding box overlays.</em></p>
 </div>
 
 ### 🖼️ Static Image Detections
@@ -112,16 +112,6 @@ The detection workflow follows a modular, decoupled architecture:
 | *Dog (86%), Bicycle (84%), Truck (78%)* |
 
 </div>
-
-### Performance Highlights
-
-| Input Sample | Media Type | Resolution | Detected Entities | Latency (CPU) | Throughput |
-| :--- | :---: | :---: | :--- | :---: | :---: |
-| `data/videos/market.mp4` | Video | 640 x 360 | Persons, Vehicles, Street Furniture | ~24 ms/frame | **~41.6 FPS** |
-| `data/images/traffic.png` | Image | 1536 x 1024 | Buses, Truck, Car, Horse, Dog, Persons, Backpack | ~31 ms | **~32.2 FPS** |
-| `data/images/person.jpg` | Image | 640 x 424 | Person, Horse, Dog | ~22 ms | **~45.4 FPS** |
-| `data/images/dog.jpg` | Image | 768 x 576 | Dog, Bicycle, Truck | ~28 ms | **~35.7 FPS** |
-| `data/videos/Driving-Chinatown-SF.mp4` | Video | 1280 x 720 | Dense urban traffic, Pedestrians | ~32 ms/frame | **~31.0 FPS** |
 
 ---
 
