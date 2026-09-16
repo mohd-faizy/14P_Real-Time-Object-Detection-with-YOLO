@@ -72,7 +72,7 @@
 The detection workflow follows a modular, decoupled architecture:
 
 <div align="center">
-  <img src="assets/yolo26_pipeline.png" alt="YOLO26 Detection Pipeline Architecture" width="85%" />
+  <img src="assets/yolo26_pipeline.png" alt="YOLO26 Detection Pipeline Architecture" width="60%" />
 </div>
 
 ### Architectural Workflow
@@ -409,17 +409,15 @@ The detector has built-in smart extension matching. If you pass <code>data/image
 
 Contributions, improvements, and suggestions are welcome! Please feel free to open an issue or pull request on [GitHub](https://github.com/mohd-faizy/14P_Real-Time-Object-Detection-with-YOLO).
 
-### License
 
-Distributed under the terms of the [MIT License](LICENSE).
+---
 
-```text
-MIT License
-Copyright (c) 2026 mohd-faizy
-```
+## 📄 License
+
+This repository is licensed under the **MIT License**. See the [`LICENSE`](LICENSE) file for complete details.
 
 ---
 
 <div align="center">
-  <sub>Built with ❤️ by <a href="https://github.com/mohd-faizy">mohd-faizy</a> for the Computer Vision Community.</sub>
+  <sub>Built with 💡 for AI Engineers, ML Scientists, and Product Teams building dependable GenAI systems.</sub>
 </div>
